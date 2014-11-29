@@ -1,0 +1,6 @@
+# Welcome to the config for command blocker
+# This has support for the wildcard *
+blocked:
+  - /mctop *
+  - /baltop *
+  - /balancetop *

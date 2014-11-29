@@ -1,0 +1,8 @@
+name: CommandBlocker
+version: 1.0
+author: mydeblob
+main: com.mydeblob.commandblocker.CommandBlocker
+commands:
+   cbreload:
+      description: Reloads the config.yml
+      usage: /<command>
