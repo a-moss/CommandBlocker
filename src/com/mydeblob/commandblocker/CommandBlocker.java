@@ -34,10 +34,12 @@ public class CommandBlocker extends JavaPlugin implements Listener{
 				String[] split = s.split("\\*");
 				if(msg.startsWith(split[0].replaceAll("\\s+$", ""))){
 					e.setCancelled(true);
+					e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("message").replaceAll("%c%", s)));
 				}
 			}else{
 				if(msg.contains(s)){
 					e.setCancelled(true);
+					e.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&', getConfig().getString("message").replaceAll("%c%", s)));
 				}
 			}
 		}

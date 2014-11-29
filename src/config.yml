@@ -4,3 +4,8 @@ blocked:
   - /mctop *
   - /baltop *
   - /balancetop *
+  
+# This is the message sent to the player when he tries to perform a blocked command
+# %c% is replaced with the command
+# Set to null to disable
+message: "&cThat command, %c%, is temporarily disabled!"
